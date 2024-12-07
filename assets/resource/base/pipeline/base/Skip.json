@@ -1,0 +1,106 @@
+{
+  "跳过开包1":{
+    "recognition": "OCR",
+    "expected": "SKIP",
+    "action": "Click",
+    "post_wait_freezes": 2000,
+    "next": [
+      "跳过看干员1"
+    ]
+  },
+  "跳过开包2":{
+    "recognition": "OCR",
+    "expected": "SKIP",
+    "action": "Click",
+    "post_wait_freezes": 2000,
+    "next": [
+      "跳过看干员2"
+    ]
+  },
+  "跳过开包3":{
+    "recognition": "OCR",
+    "expected": "SKIP",
+    "action": "Click",
+    "post_wait_freezes": 2000,
+    "next": [
+      "跳过看干员3"
+    ]
+  },
+  "跳过开包4":{
+    "recognition": "OCR",
+    "expected": "SKIP",
+    "action": "Click",
+    "post_wait_freezes": 2000,
+    "next": [
+      "跳过看干员4"
+    ]
+  },
+  "跳过看干员1": {
+    "action": "Click",
+    "target": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "next":[
+      "开始招募"
+    ]
+  },
+  "跳过看干员2": {
+    "action": "Click",
+    "target": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "next":[
+      "开始招募"
+    ]
+  },
+  "跳过看干员3": {
+    "action": "Click",
+    "target": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "next":[
+      "开始招募"
+    ]
+  },
+  "跳过看干员4": {
+    "action": "Click",
+    "target": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "next":[
+      "开始招募"
+    ]
+  },
+
+
+
+  "Skip": {
+    "recognition": "OCR",
+    "expected": "SKIP",
+    "action": "Click",
+    "next": [
+      "cl_win"
+    ]
+  },
+  "cl_win": {
+    "action": "Click",
+    "target": [
+      100,
+      100,
+      100,
+      100
+    ]
+  }
+}

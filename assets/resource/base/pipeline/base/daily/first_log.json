@@ -1,0 +1,24 @@
+{
+  "每日签到":
+    {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "roi":[1770,64,108,90],
+        "template": "签到关闭.png",
+        "post_wait_freezes": 500,
+        "next":
+        [
+          "每日活动"
+        ]
+    },
+  "每日活动":
+    {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "roi":[850,950,200,100],
+        "template": "活动关闭.png",
+        "post_wait_freezes": 500
+    }
+
+
+}

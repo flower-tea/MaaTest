@@ -1,0 +1,150 @@
+{
+  "识别公招1需完成": {
+    "recognition": "OCR",
+    "expected": "开始招募干员",
+    "roi": [
+      0,
+      180,
+      640,
+      230
+    ],
+    "action": "Click",
+    "next": [
+        "ChoiceTime1"
+    ]
+  },
+
+  "ChoiceTime1": {
+    "action": "Click",
+    "target": [
+      400,
+      270,
+      10,
+      10
+    ],
+    "next": [
+      "ChoiceEnd1"
+    ]
+  },
+  "ChoiceEnd1": {
+    "action": "Click",
+    "target": [
+      960,
+      567,
+      1,
+      1
+    ],
+    "next": "开始招募"
+  },
+  "识别公招2需完成": {
+    "recognition": "OCR",
+    "expected": "开始招募干员",
+    "roi": [
+      640,
+      180,
+      640,
+      240
+    ],
+    "action": "Click",
+    "next": [
+        "ChoiceTime2"
+    ]
+  },
+
+  "ChoiceTime2": {
+    "action": "Click",
+    "target": [
+      400,
+      270,
+      10,
+      10
+    ],
+    "next": [
+      "ChoiceEnd2"
+    ]
+  },
+  "ChoiceEnd2": {
+    "action": "Click",
+    "target": [
+      960,
+      567,
+      1,
+      1
+    ],
+    "next": "开始招募"
+  },
+  "识别公招3需完成": {
+    "recognition": "OCR",
+    "expected": "开始招募干员",
+    "roi": [
+      0,
+      420,
+      640,
+      240
+    ],
+    "action": "Click",
+    "next": [
+        "ChoiceTime3"
+    ]
+  },
+
+  "ChoiceTime3": {
+    "action": "Click",
+    "target": [
+      400,
+      270,
+      10,
+      10
+    ],
+    "next": [
+      "ChoiceEnd3"
+    ]
+  },
+  "ChoiceEnd3": {
+    "action": "Click",
+    "target": [
+      960,
+      567,
+      1,
+      1
+    ],
+    "next": "开始招募"
+  },
+  "识别公招4需完成": {
+    "recognition": "OCR",
+    "expected": "开始招募干员",
+    "roi": [
+      640,
+      180,
+      640,
+      240
+    ],
+    "action": "Click",
+    "next": [
+        "ChoiceTime4"
+    ]
+  },
+
+  "ChoiceTime4": {
+    "action": "Click",
+    "target": [
+      400,
+      270,
+      10,
+      10
+    ],
+    "next": [
+      "ChoiceEnd4"
+    ]
+  },
+  "ChoiceEnd4": {
+    "action": "Click",
+    "target": [
+      960,
+      567,
+      1,
+      1
+    ],
+    "next": "退出招募"
+  }
+}

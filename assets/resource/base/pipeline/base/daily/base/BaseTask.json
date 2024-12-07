@@ -1,0 +1,149 @@
+{
+  "BaseTask": {
+    "next": [
+      "打开基建"
+    ]
+  },
+
+  "打开基建": {
+    "recognition": "OCR",
+    "roi": [
+      720,
+      300,
+      540,
+      600
+    ],
+    "action": "Click",
+    "expected": "基建",
+    "post_wait_freezes": 3000,
+    "next": [
+      "基建右上"
+    ]
+  },
+  "基建右上": {
+    "recognition": "TemplateMatch",
+    "template": "basic/基建蓝色.png",
+    "threshold": 0.3,
+    "roi": [
+      1130,
+      50,
+      300,
+      100
+    ],
+    "action": "Click",
+    "next": [
+      "基建点击"
+    ]
+  },
+  "基建点击": {
+    "next": [
+      "基建收获完成"
+    ],
+    "interrupt": [
+      "基建收获物资",
+      "基建收获订单",
+      "基建收获信赖",
+      "基建队员轮换",
+      "基建疲劳安置",
+      "基建退出"
+    ]
+  },
+
+  "基建收获物资": {
+    "recognition": "OCR",
+    "expected": "可收获",
+    "roi": [
+      50,
+      600,
+      1000,
+      120
+    ],
+    "action": "Click"
+  },
+
+  "基建收获订单": {
+    "recognition": "OCR",
+    "expected": "订单交付",
+    "roi": [
+      50,
+      600,
+      1000,
+      120
+    ],
+    "action": "Click"
+  },
+
+  "基建收获信赖": {
+    "recognition": "OCR",
+    "expected": "干员信赖",
+    "roi": [
+      50,
+      600,
+      1000,
+      120
+    ],
+    "action": "Click"
+  },
+
+  "基建队员轮换": {
+    "recognition": "OCR",
+    "expected": "队列轮换",
+    "roi": [
+      50,
+      600,
+      1000,
+      120
+    ],
+    "action": "Click"
+  },
+
+  "基建疲劳安置": {
+    "recognition": "OCR",
+    "expected": "干员休整",
+    "roi": [
+      50,
+      600,
+      1000,
+      120
+    ],
+    "action": "Click"
+  },
+  "基建线索收集": {
+    "recognition": "OCR",
+    "expected": "线索",
+    "roi": [
+      50,
+      600,
+      1000,
+      120
+    ],
+    "action": "DoNothing",
+    "next": [
+      "打开会客室"
+    ]
+  },
+  "基建退出": {
+    "recognition": "TemplateMatch",
+    "template": "basic/基建退出.png",
+    "threshold": 0.5,
+    "roi":[
+      0,
+      0,
+      400,
+      200
+    ],
+    "action": "Click"
+  },
+
+  "基建收获完成": {
+    "recognition": "OCR",
+    "expected": "是否确认离开罗德岛基建",
+    "action": "Click",
+    "target": [
+      800,
+      500,
+      10,
+      10
+    ]
+  }
+}

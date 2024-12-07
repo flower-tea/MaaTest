@@ -1,0 +1,45 @@
+{
+    "StartUp":
+    {
+        "next":
+        [
+            "open game"
+        ]
+    },
+    "open game":
+    {
+        "action": "StartApp",
+        "package": "com.hypergryph.arknights",
+        "next":
+        [
+            "start game 1"
+        ]
+
+    },
+    "start game 1": {
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "roi": [
+            600,
+            620,
+            200,
+            100
+        ],
+        "template": "开始图标.png",
+        "post_wait_freezes": 500,
+        "next": [
+            "start game 2"
+        ]
+    },
+    "start game 2":
+    {
+        "recognition": "OCR",
+        "roi":
+           [500,
+            440,
+            300,
+            200],
+        "action": "Click",
+        "expected": "开始唤醒"
+    }
+}

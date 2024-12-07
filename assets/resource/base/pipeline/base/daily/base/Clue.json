@@ -1,0 +1,7 @@
+{
+  "打开会客室": {
+    "recognition": "OCR",
+    "expected": "会客室",
+    "action": "Click"
+  }
+}
