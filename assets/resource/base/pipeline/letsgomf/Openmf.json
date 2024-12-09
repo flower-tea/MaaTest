@@ -1,0 +1,11 @@
+{
+  "Open mf": {
+    "next": [
+      "mf game"
+    ]
+  },
+  "mf game": {
+    "action":"StartApp",
+    "package": "com.xd.cfbmf"
+  }
+}

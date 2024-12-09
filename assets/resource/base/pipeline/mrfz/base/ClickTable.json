@@ -1,0 +1,11 @@
+{
+  "ClickTable": {
+    "action": "Click",
+    "target": [
+      100,
+      100,
+      100,
+      100
+    ]
+  }
+}

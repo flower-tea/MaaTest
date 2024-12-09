@@ -1,0 +1,20 @@
+{
+  "desktop":{
+    "recognition": "TemplateMatch",
+    "template": "Desktop/米哈游启动器.png",
+    "roi": [
+      260,
+      64,
+      47,
+      44
+    ],
+    "action": "Click",
+    "post_wait_freezes": 1500,
+    "next": [
+      "double"
+    ]
+  },
+  "double": {
+    "action": "Click"
+  }
+}

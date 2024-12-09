@@ -1,0 +1,74 @@
+{
+  "exit": {
+    "next": [
+      "CombatExit",
+      "BaseExit",
+      "ShopExit",
+      "MillionExit",
+      "Wait"
+    ]
+  },
+  "CombatExit": {
+    "recognition": "TemplateMatch",
+    "template": "退出.png",
+    "threshold": 0.5,
+    "roi":[
+      0,
+      0,
+      400,
+      200
+    ],
+    "action": "Click",
+    "next":[
+      "exit"
+    ]
+  },
+  "BaseExit": {
+    "recognition": "TemplateMatch",
+    "template": "退出.png",
+    "threshold": 0.5,
+    "roi":[
+      0,
+      0,
+      400,
+      200
+    ],
+    "action": "Click",
+    "next":[
+      "exit"
+    ]
+  },
+  "ShopExit": {
+    "recognition": "TemplateMatch",
+    "template": "退出.png",
+    "threshold": 0.5,
+    "roi":[
+      0,
+      0,
+      400,
+      200
+    ],
+    "action": "Click",
+    "next":[
+      "exit"
+    ]
+  },
+  "MillionExit": {
+    "recognition": "TemplateMatch",
+    "template": "任务退出.png",
+    "threshold": 0.5,
+    "roi":[
+      0,
+      0,
+      400,
+      200
+    ],
+    "action": "Click",
+    "next":[
+      "exit"
+    ]
+  },
+  "Wait":{
+    "action": "DoNothing"
+  }
+}

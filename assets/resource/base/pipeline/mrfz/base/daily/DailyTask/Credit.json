@@ -1,0 +1,164 @@
+{
+  "DailyTask": {
+    "next":[
+      "信用收获"
+    ]
+  },
+  "信用收获": {
+    "recognition": "OCR",
+    "roi": [
+      720,
+      100,
+      540,
+      600
+    ],
+    "action": "Click",
+    "expected": "采购中心",
+    "post_wait_freezes": 1500,
+    "next": [
+      "打开信用交易所"
+    ]
+  },
+  "打开信用交易所": {
+    "recognition": "OCR",
+    "roi": [
+      870,
+      50,
+      500,
+      100
+    ],
+    "action": "Click",
+    "expected":"信用交易所",
+    "post_wait_freezes": 2000,
+    "next": [
+      "已领取信用",
+      "收取信用"
+    ]
+  },
+  "已领取信用": {
+    "recognition": "OCR",
+    "roi": [
+      800,
+      0,
+      500,
+      50
+    ],
+    "action": "Click",
+    "expected":"已领取",
+    "post_wait_freezes": 1500,
+    "next": [
+      "exit"
+    ]
+  },
+  "收取信用": {
+    "recognition": "OCR",
+    "roi": [
+      800,
+      0,
+      500,
+      50
+    ],
+    "action": "Click",
+    "expected":"收取信用",
+    "post_wait_freezes": 1500,
+    "next": [
+      "购买"
+    ]
+  },
+  "购买": {
+    "next": [
+      "信用不足",
+      "确认购买完成",
+      "购买99%",
+      "购买75%",
+      "购买50%",
+      "exit"
+    ]
+  },
+  "购买99%": {
+    "recognition": "OCR",
+    "expected": "-99%",
+    "roi" : [
+      0,
+      139,
+      1279,
+      514
+    ],
+    "action": "Click",
+    "next": [
+      "购买物品"
+    ]
+  },
+  "购买75%": {
+    "recognition": "OCR",
+    "expected": "-75%",
+    "roi" : [
+      0,
+      139,
+      1279,
+      514
+    ],
+    "action": "Click",
+    "next": [
+      "购买物品"
+    ]
+  },
+  "购买50%": {
+    "recognition": "OCR",
+    "expected": "-50%",
+    "roi" : [
+      0,
+      139,
+      1279,
+      514
+    ],
+    "action": "Click",
+    "next": [
+      "购买物品"
+    ]
+  },
+  "购买物品": {
+    "recognition": "OCR",
+    "expected": "购买物品",
+    "roi" : [791,543,252,70],
+    "action": "Click",
+    "next": [
+      "购买"
+    ]
+  },
+  "信用不足": {
+    "recognition": "OCR",
+    "roi": [
+      938,
+      2,
+      341,
+      146
+    ],
+    "expected": "信用不足，无法购买",
+    "post_wait_freezes": 1500,
+    "next": [
+      "exit"
+    ]
+  },
+  "确认购买完成": {
+    "recognition": "TemplateMatch",
+    "template": "确认.png",
+    "roi": [
+      601,
+      602,
+      76,
+      76
+    ],
+    "action": "Click",
+    "target": [
+      603,
+      604,
+      70,
+      69
+    ],
+    "next": [
+      "购买"
+    ]
+  }
+
+}

@@ -1,0 +1,147 @@
+{
+  "NormalCombat": {
+    "next": [
+      "刷取龙门币"
+    ]
+  },
+  "刷取龙门币": {
+    "recognition": "OCR",
+    "roi": [
+      720,
+      100,
+      540,
+      600
+    ],
+    "action": "Click",
+    "expected": "终端",
+    "post_wait_freezes": 2000,
+    "next": [
+      "资源收集"
+    ]
+  },
+  "资源收集": {
+    "recognition": "TemplateMatch",
+    "template": "Combat/物资搜集.png",
+    "threshold": 0.3,
+    "roi": [
+      680,
+      620,
+      80,
+      80
+    ],
+    "action":"Click",
+    "target": [
+      689,
+      643,
+      2,
+      2
+    ],
+    "post_wait_freezes": 700,
+    "next": [
+      "货物运送"
+    ]
+  },
+  "货物运送": {
+    "recognition": "OCR",
+    "roi": [
+      0,
+      150,
+      1280,
+      560
+    ],
+    "action": "Click",
+    "expected": "货物运送",
+    "post_wait_freezes": 2000,
+    "next": [
+      "CE-6"
+    ]
+  },
+  "CE-6": {
+    "recognition": "OCR",
+    "roi": [
+      0,
+      120,
+      1280,
+      560
+    ],
+    "action": "Click",
+    "expected": "CE-6",
+    "post_wait_freezes": 400,
+    "next": [
+      "CE-6-Enter"
+    ]
+    },
+     "CE-6-Enter": {
+       "recognition": "OCR",
+       "roi": [
+         600,
+         500,
+         1000,
+         200
+       ],
+       "action": "Click",
+       "expected": "开始行动",
+       "next": [
+         "行动预备"
+       ]
+     },
+    "行动预备": {
+      "next": [
+        "代理指挥",
+        "理智不够",
+        "等待结束"
+      ]
+    },
+    "代理指挥": {
+      "recognition": "OCR",
+      "expected": [  "开始",
+                     "行动"
+      ],
+      "roi": [
+        640,
+        400,
+        1280,
+        560
+      ],
+      "action": "Click",
+      "next": [
+        "行动预备"
+      ]
+    },
+    "理智不够":{
+      "recognition": "OCR",
+      "roi": [
+        640,
+        400,
+        1280,
+        560
+      ],
+      "action": "Click",
+      "target":[
+        100,
+        100,
+        1,
+        1
+      ],
+      "expected": "理智合剂",
+      "post_wait_freezes": 400,
+      "next": [
+        "行动预备"
+      ]
+    },
+    "等待结束":{
+      "recognition": "OCR",
+      "expected": "行动结束",
+      "action": "Click",
+      "target": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "post_wait_freezes": 1000,
+      "next": [
+        "exit"
+      ]
+    }
+}

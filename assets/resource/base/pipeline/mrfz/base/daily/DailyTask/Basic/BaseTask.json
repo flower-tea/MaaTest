@@ -23,13 +23,8 @@
   "基建右上": {
     "recognition": "TemplateMatch",
     "template": "basic/基建蓝色.png",
-    "threshold": 0.3,
-    "roi": [
-      1130,
-      50,
-      300,
-      100
-    ],
+    "threshold": 0.2,
+    "roi" : [1169,49,110,114],
     "action": "Click",
     "next": [
       "基建点击"
@@ -144,6 +139,9 @@
       500,
       10,
       10
+    ],
+    "next": [
+      "exit"
     ]
   }
 }

@@ -10,6 +10,7 @@
     {
         "action": "StartApp",
         "package": "com.hypergryph.arknights",
+        "post_wait_freezes": 5000,
         "next":
         [
             "start game 1"
@@ -40,6 +41,10 @@
             300,
             200],
         "action": "Click",
-        "expected": "开始唤醒"
+        "expected": "开始唤醒",
+        "post_wait_freezes": 10000,
+        "next": [
+            "first_log"
+        ]
     }
 }

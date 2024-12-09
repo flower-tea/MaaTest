@@ -105,15 +105,8 @@
     "next": "退出招募"
   },
   "退出招募": {
-    "recognition": "TemplateMatch",
-    "template": "退出.png",
-    "threshold": 0.5,
-    "roi":[
-      0,
-      0,
-      400,
-      200
-    ],
-    "action": "Click"
+    "next": [
+      "exit"
+    ]
   }
 }

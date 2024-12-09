@@ -1,0 +1,44 @@
+{
+  "first_log": {
+    "next": [
+      "确认签到",
+      "每日签到",
+      "每日活动",
+      "exit"
+    ]
+  },
+  "确认签到": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": "确认.png",
+    "post_wait_freezes": 500,
+    "next": [
+      "first_log"
+    ]
+  },
+  "每日签到": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": "签到关闭.png",
+    "post_wait_freezes": 500,
+    "next": [
+      "first_log"
+    ]
+  },
+  "每日活动": {
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "template": "活动关闭.png",
+    "threshold": 0.5,
+    "roi": [
+      1000,
+      20,
+      300,
+      130
+    ],
+    "post_wait_freezes": 500,
+    "next": [
+      "first_log"
+    ]
+  }
+}
